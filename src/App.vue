@@ -1,16 +1,25 @@
+<template>
+  <div>
+    <app-header></app-header>
+    <app-dota></app-dota>
+    <app-footer></app-footer>
+  </div>
+</template>
+
 <script>
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Dota from './components/Dota'
+
 export default {
-  name: 'App'
+  components: {
+    'app-header': Header,
+    'app-dota': Dota,
+    'app-footer': Footer
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
