@@ -1,24 +1,29 @@
 <template>
-  <div class="form-login">
-    <form name="SignInForm" id="SignInForm" method="post" class="login">
+  <div class="form-register">
+    <form name="SignInForm" id="SignInForm" method="post" class="register">
       <div>
         <form name="Title" id="Title" class="lg-title">
           <div class="font">
-            <h4>Login to our site</h4>
-            <h5>Enter username and password to log on:</h5>
+            <h4>Sign up now</h4>
+            <h5>Fill in the form below to get instant access</h5>
           </div>
-          <img src="../../assets/lock-black.svg" class="img-lock-black">
+          <img src="../../assets/pencil.jpg" class="img-pencil">
         </form>
       </div>
-
       <div class="form-group">
-        <input type="text" placeholder="Username" class="lg-username" >
+        <input type="text" placeholder="First Name" class="rg-first-name" >
       </div>
       <div class="form-group">
-        <input type="password" placeholder="Password" class="lg-password">
+        <input type="text" placeholder="Last Name" class="rg-last-name">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Email" class="rg-email">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="About yourseft" class="rg-about">
       </div>
       <div>
-        <button class="bt-sign-in">Sign in!</button>
+        <button class="bt-sign-up">Sign me up!</button>
       </div>
      </form>
   </div>
@@ -26,12 +31,12 @@
 
 <script>
 export default {
-  name: 'form-login'
+  name: 'form-register'
 }
 </script>
 
 <style spoced>
-.login {
+.register {
   width: 350px;
   margin: 250px auto 0;
   background-color: #3c6086 ;
@@ -40,7 +45,7 @@ export default {
   text-decoration-color: white;
   background-color: #375b80;
 }
-.bt-sign-in {
+.bt-sign-up {
   border: none;
   background: rgb(0, 195, 255);
   border-radius: 3px;
@@ -60,7 +65,7 @@ export default {
   background: white;
   color: #0e6252;
 }
-.img-lock-black {
+.img-pencil {
   height: 50px;
   margin-left: 270px;
 }
