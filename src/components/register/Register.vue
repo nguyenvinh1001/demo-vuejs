@@ -67,11 +67,14 @@ export default {
 }
 .img-pencil {
   height: 50px;
-  margin-left: 270px;
+  right: 20px;
+  top: 20px;
+  position: absolute;
 }
 .font {
   color: white;
   margin-left: 20px;
   padding: 1px;
+  position: relative;
 }
 </style>

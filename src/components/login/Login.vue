@@ -6,8 +6,8 @@
           <div class="font">
             <h4>Login to our site</h4>
             <h5>Enter username and password to log on:</h5>
+            <img src="../../assets/lock-black.svg" class="img-lock-black">
           </div>
-          <img src="../../assets/lock-black.svg" class="img-lock-black">
         </form>
       </div>
 
@@ -34,7 +34,8 @@ export default {
 .login {
   width: 350px;
   margin: 250px auto 0;
-  background-color: #3c6086 ;
+  background-color: #3c6086;
+  position: relative;
 }
 .lg-title {
   text-decoration-color: white;
@@ -52,7 +53,7 @@ export default {
 }
 .form-group {
   margin: 10px 60px 10px;
-  width: 200px;
+  width: 100%;
   height: 35px;
   display: block;
   border: none;
@@ -62,7 +63,9 @@ export default {
 }
 .img-lock-black {
   height: 50px;
-  margin-left: 270px;
+  right: 20px;
+  top: 20px;
+  position: absolute;
 }
 .font {
   color: white;
